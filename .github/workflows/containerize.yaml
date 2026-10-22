@@ -10,7 +10,7 @@ jobs:
       - run: npm run test
       
   build-push:
-    needs: test2
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
